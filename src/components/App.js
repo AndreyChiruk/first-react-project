@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Image from './Image';
+import fon from '../images/minsk.jpg';
 class AppClass extends React.Component{
     constructor(props){
         super(props)
@@ -12,6 +13,7 @@ class AppClass extends React.Component{
             <div className="block">
                 <p>Текущее время в Минске: {this.state.time}</p>
                 <button className="btn" onClick={this.titleClick}>Узнать</button>
+                <Image title={fon}/>
             </div>
         )
     }
